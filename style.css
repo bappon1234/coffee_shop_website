@@ -1,0 +1,605 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general settings */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    position: relative; /* Required for absolute positioning of nav-list */
+}
+
+.navbar img {
+    width: 100px;
+    height: 110px;
+}
+
+/* Menu toggle styling */
+.menu-toggle {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    color: #fff; /* Icon color */
+    font-size: 24px; /* Icon size */
+}
+
+/* Nav list styling */
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.nav-list li {
+    display: inline;
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-list a:hover {
+    background-color: #555;
+}
+
+/* Home container styling */
+.home-container {
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url('./images/coffee-home.jpg'); /* Add your image URL here */
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    padding: 20px;
+}
+
+.home-container h2 {
+    color: #fff;
+    font-size: 48px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.home-container p {
+    color: #fff;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.home-container a {
+    padding: 10px 20px;
+    text-align: center;
+    background-color: darkgoldenrod;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    margin: 20px;
+}
+
+.home-container a:hover {
+    background-color: #b8860b;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .nav-list {
+        display: none; /* Hidden by default */
+        flex-direction: column; /* Stack vertically */
+        position: absolute; /* Positioning */
+        top: 60px; /* Position under navbar */
+        left: 0;
+        right: 0;
+        background-color: rgb(0, 0, 0); /* Background color */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+        z-index: 1000; /* Ensure it appears above other elements */
+    }
+
+    .nav-list.active {
+        display: flex; /* Show when active */
+    }
+
+    .menu-toggle {
+        display: block; /* Show the menu toggle button */
+    }
+}
+
+/* About Page Styling */
+.about-container {
+    padding: 50px;
+    background-color: #ede9e9f1; /* Light background for contrast */
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between the image and text */
+}
+
+.about-content img {
+    width: 25%;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 200px;
+}
+
+.about-text {
+    max-width: 600px; /* Restrict the width of the text */
+    text-align: left;
+}
+
+.about-text h3 {
+    font-size: 32px;
+    margin-bottom: 75px;
+    color: rgb(23, 123, 210);
+    text-decoration: underline; /* Underline the heading */
+    text-align: center;
+}
+
+.about-text p {
+    font-size: 22px;
+    line-height: 1.6; /* Increase line height for readability */
+    margin-bottom: 15px;
+    color: rgb(17, 17, 17);
+}
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center items */
+    }
+
+    .about-content img {
+        width: 80%; /* Increase image size for better visibility */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add space below the image */
+    }
+
+    .about-text {
+        max-width: 100%; /* Allow full width on smaller screens */
+        text-align: center; /* Center text for better presentation */
+    }
+
+    .about-text h3 {
+        font-size: 28px; /* Adjust font size for mobile */
+        margin-bottom: 30px; /* Adjust margin */
+    }
+
+    .about-text p {
+        font-size: 18px; /* Adjust paragraph font size */
+    }
+}
+/* Menu Section Styling */
+.menu-section {
+    padding: 50px;
+    background-color: #0c0c0c; /* Light background for contrast */
+    text-align: center;
+}
+
+.menu-section h2 {
+    font-size: 36px;
+    color: #fffdfd;
+    margin-bottom: 40px;
+    text-decoration: underline;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Space between each menu item */
+}
+
+.menu-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.menu-details {
+    padding: 20px;
+    text-align: left;
+}
+
+.menu-details h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.menu-details p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.menu-price {
+    font-size: 20px;
+    color: darkgoldenrod;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+.blog-section {
+    padding: 50px 20px;
+    background-color: #030303;
+  }
+  
+  .blog-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .blog-video {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 30%;
+  }
+  
+  .blog-video iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+  }
+  
+  .blog-content {
+    padding: 20px;
+  }
+  
+  .blog-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .blog-content p {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+  @media (max-width: 768px) {
+    .blog-video {
+        max-width: 100%; /* Full width for blog video on mobile */
+    }
+
+    .blog-container {
+        justify-content: center; /* Center blog posts on mobile */
+    }
+
+    .blog-video iframe {
+        height: 150px; /* Reduce height of iframe for smaller screens */
+    }
+
+    .blog-content h3 {
+        font-size: 1.3em; /* Adjust heading size for mobile */
+    }
+
+    .blog-content p {
+        font-size: 0.9em; /* Adjust paragraph size for mobile */
+    }
+}
+  /* General Styling for the Review Section */
+.review-section {
+    padding: 40px;
+    background-color: #5f5a5a;
+    text-align: center;
+}
+
+.review-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Review Container Styling */
+.review-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual Review Card */
+.review-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.review-header h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0;
+}
+
+.rating span {
+    font-size: 1.2em;
+    color: #ffcc00;
+}
+
+.review-text {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+}
+/* General Styling for Contact Section */
+.contact-section {
+    padding: 40px;
+    background-color: #f9f2f2;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    text-decoration: underline;
+}
+
+.contact-section p {
+    font-size: 1.2em;
+    color: #353535;
+    margin-bottom: 40px;
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Contact Form */
+.contact-form {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 325px;
+    margin: 0 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    margin-right: 300px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.submit-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Social Media */
+.social-media {
+    flex: 1;
+    padding: 20px;
+    margin: 0 10px;
+    max-width: 300px;
+}
+
+.social-media h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.social-icon {
+    font-size: 1.5em;
+    color: #007bff;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #0056b3;
+}
+
+/* Footer Section */
+.footer-section {
+    background-color: #060606;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer About */
+.footer-about {
+    flex: 1;
+    margin: 10px;
+    max-width: 300px;
+}
+
+.footer-about h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-about p {
+    font-size: 1em;
+    color: #ccc;
+}
+
+/* Footer Links */
+.footer-links {
+    flex: 1;
+    margin: 10px;
+    max-width: 300px;
+}
+
+.footer-links h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+.footer-links ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.footer-links ul li a:hover {
+    color: #007bff;
+}
+
+/* Footer Social */
+.footer-social {
+    flex: 1;
+    margin: 10px;
+    max-width: 300px;
+}
+
+.footer-social h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    background-color: #8a4d4d;
+    padding: 20px;
+    margin-top: 20px;
+    color: #ccc;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+  

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <header>
+        <h1>Book a Table</h1>
+    </header>
+    <main>
+        <form id="booking-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required><br><br>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required><br><br>
+            <label for="guests">Number of Guests:</label>
+            <select id="guests" name="guests" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select><br><br>
+            <label for="special-requests">Special Requests:</label>
+            <textarea id="special-requests" name="special-requests"></textarea><br><br>
+            <input type="submit" value="Book a Table">
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE BEN COFFEE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script type="module" src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img src="/images/l.jpg" alt="Coffee House Logo"> <!-- Replace with actual logo -->
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i> <!-- Font Awesome icon for hamburger menu -->
+            </div>
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#reviews">Review</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="home-container">
+            <h2>Welcome to Ben Coffee Cafe</h2>
+            <p>Your perfect place for a cup of joy and relaxation.</p>
+            <a href="#" class="cta-button">Book a table</a>
+        </div>
+    </header>
+    
+    
+    
+    <section class="about-container" id="about">
+        <div class="about-content">
+            <img src="./images/about.jpg" alt="About Coffee House">
+            <div class="about-text">
+                <h3>About Us</h3>
+                <p>Welcome to Coffee Haven, where we believe that every coffee break should be a delightful experience. 
+                   Our passion for coffee drives us to source the finest beans from around the world, ensuring that each 
+                   cup we serve is crafted with care and perfection. 
+                </p>
+                <p>Whether you are looking for a quiet place to work, a cozy spot to catch up with friends, or simply a 
+                   moment to enjoy your favorite brew, Coffee Haven is the place for you. 
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="menu-section" id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-container">
+            <!-- Coffee Items -->
+            <div class="menu-item">
+                <img src="./images/menu 1.png" alt="Cappuccino">
+                <div class="menu-details">
+                    <h3>Cappuccino</h3>
+                    <p>Rich espresso blended with steamed milk and topped with froth.</p>
+                    <span class="menu-price">$5.00</span>
+                </div>
+            </div>
+    
+            <div class="menu-item">
+                <img src="./images/coffee-transparent-24.png" alt="Latte">
+                <div class="menu-details">
+                    <h3>Latte</h3>
+                    <p>A smooth mix of espresso and steamed milk with a touch of foam.</p>
+                    <span class="menu-price">$4.50</span>
+                </div>
+            </div>
+    
+            <div class="menu-item">
+                <img src="./images/americano.png" alt="Americano">
+                <div class="menu-details">
+                    <h3>Americano</h3>
+                    <p>Espresso shot topped with hot water for a strong, bold coffee flavor.</p>
+                    <span class="menu-price">$3.50</span>
+                </div>
+            </div>
+    
+            <div class="menu-item">
+                <img src="./images/mocha.png" alt="Mocha">
+                <div class="menu-details">
+                    <h3>Mocha</h3>
+                    <p>Espresso combined with chocolate syrup, steamed milk, and whipped cream.</p>
+                    <span class="menu-price">$5.50</span>
+                </div>
+            </div>
+    
+            <!-- Pastry Items -->
+            <div class="menu-item">
+                <img src="./images/croissant.jpg" alt="Croissant">
+                <div class="menu-details">
+                    <h3>Croissant</h3>
+                    <p>Buttery, flaky, and golden-brown classic French pastry.</p>
+                    <span class="menu-price">$2.50</span>
+                </div>
+            </div>
+    
+            <div class="menu-item">
+                <img src="./images/bluebery.png" alt="Blueberry Muffin">
+                <div class="menu-details">
+                    <h3>Blueberry Muffin</h3>
+                    <p>Soft, moist muffin packed with fresh blueberries.</p>
+                    <span class="menu-price">$3.00</span>
+                </div>
+            </div>
+    
+            <div class="menu-item">
+                <img src="./images/chocolate chip.jpeg" alt="Chocolate Chip Cookie">
+                <div class="menu-details">
+                    <h3>Chocolate Chip Cookie</h3>
+                    <p>Classic cookie loaded with rich chocolate chips.</p>
+                    <span class="menu-price">$1.50</span>
+                </div>
+            </div>
+    
+            <div class="menu-item">
+                <img src="./images/chinamon roll.png" alt="Cinnamon Roll">
+                <div class="menu-details">
+                    <h3>Cinnamon Roll</h3>
+                    <p>Warm, gooey roll covered in a sweet cinnamon glaze.</p>
+                    <span class="menu-price">$4.00</span>
+                </div>
+            </div>
+    
+            <!-- Cold Beverages -->
+            <div class="menu-item">
+                <img src="./images/iced coffee.jpeg" alt="Iced Coffee">
+                <div class="menu-details">
+                    <h3>Iced Coffee</h3>
+                    <p>Refreshing cold-brewed coffee served over ice.</p>
+                    <span class="menu-price">$3.00</span>
+                </div>
+            </div>
+    
+            <div class="menu-item">
+                <img src="./images/iced lattee.jpeg" alt="Iced Latte">
+                <div class="menu-details">
+                    <h3>Iced Latte</h3>
+                    <p>A smooth blend of espresso and cold milk served over ice.</p>
+                    <span class="menu-price">$4.00</span>
+                </div>
+            </div>
+    
+            <div class="menu-item">
+                <img src="./images/Frothy-Frappe.jpeg" alt="Frappe">
+                <div class="menu-details">
+                    <h3>Frappe</h3>
+                    <p>Blended iced coffee drink topped with whipped cream.</p>
+                    <span class="menu-price">$4.50</span>
+                </div>
+            </div>
+    
+            <div class="menu-item">
+                <img src="./images/iced tea.jpg" alt="Iced Tea">
+                <div class="menu-details">
+                    <h3>Iced Tea</h3>
+                    <p>Freshly brewed tea served over ice with lemon.</p>
+                    <span class="menu-price">$2.50</span>
+                </div>
+            </div>
+        </div>
+    </section>   
+   
+    <section class="blog-section" id="blog">
+        <h2>Our Latest Blogs</h2>
+        <div class="blog-container">
+            <!-- Blog Post 1 -->
+            <div class="blog-video">
+              <iframe src="https://www.youtube.com/embed/watch?v=ZIrMyaJ_d70" frameborder="0" allowfullscreen></iframe>
+                <div class="blog-content">
+                    <h3>The Art of Coffee Brewing</h3>
+                    <p>Explore the nuances of coffee brewing techniques, from French press to espresso, and find out how to elevate your daily cup to a masterful experience.</p>
+                </div>
+            </div>
+            
+            <!-- Blog Post 2 -->
+            <div class="blog-video">
+               <iframe src="https://www.youtube.com/embed/watch?v=4A5N12Tft1w" frameborder="0" allowfullscreen></iframe>
+                <div class="blog-content">
+                    <h3>10 Pastries You Must Try</h3>
+                    <p>Indulge in a delicious journey as we take you through 10 iconic pastries from around the world that you simply can’t miss on your next visit to a bakery.</p>
+                </div>
+            </div>
+            
+            <!-- Blog Post 3 -->
+            <div class="blog-video">
+                <iframe src="https://www.youtube.com/embed/watch?v=Pi6QJ09NgN4" frameborder="0" allowfullscreen></iframe>
+                <div class="blog-content">
+                    <h3>The Rise of Cold Brew Coffee</h3>
+                    <p>Cold brew coffee is more than just a trend. Discover how this refreshing, smooth coffee has taken the world by storm, and why it's perfect for hot summer days.</p>
+                </div>
+            </div>
+            
+            <!-- Blog Post 4 -->
+            <div class="blog-video">
+                <iframe src="https://www.youtube.com/embed/watch?v=rDROa7tuz9w" frameborder="0" allowfullscreen></iframe>
+                <div class="blog-content">
+                    <h3>Secrets to Perfect Latte Art</h3>
+                    <p>Latte art is a form of self-expression for baristas. Learn the techniques behind creating beautiful latte art that will impress your friends and elevate your coffee game.</p>
+                </div>
+            </div>
+    
+            <!-- Blog Post 5 -->
+            <div class="blog-video">
+              <iframe src="https://www.youtube.com/embed/watch?v=84jKTOsnl8c" frameborder="0" allowfullscreen></iframe>
+                <div class="blog-content">
+                    <h3>A Guide to Coffee Beans</h3>
+                    <p>From Arabica to Robusta, understand the differences in coffee beans and how each variety can influence the flavor of your coffee.</p>
+                </div>
+            </div>
+            
+            <!-- Blog Post 6 -->
+            <div class="blog-video">
+          <iframe src="https://youtube.com/embed/shorts/wfRA5qIbnho?feature=shared" frameborder="0" allowfullscreen></iframe>
+                <div class="blog-content">
+                    <h3>Healthy Treats to Pair with Coffee</h3>
+                    <p>Find out how to enjoy your coffee with healthier snack options. From vegan muffins to gluten-free cookies, we’ve got you covered.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="review-section" id="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review-container">
+    
+            <!-- Review 1 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <h3>John Doe</h3>
+                    <div class="rating">
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                </div>
+                <p class="review-text">
+                    "Amazing service! The coffee was perfect, and the ambiance was cozy. Highly recommend to all coffee lovers!"
+                </p>
+            </div>
+    
+            <!-- Review 2 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <h3>Jane Smith</h3>
+                    <div class="rating">
+                        <span>⭐⭐⭐⭐</span>
+                    </div>
+                </div>
+                <p class="review-text">
+                    "Great place to relax and enjoy a good cup of coffee. The pastries were delicious as well!"
+                </p>
+            </div>
+    
+            <!-- Review 3 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <h3>Mark Johnson</h3>
+                    <div class="rating">
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                </div>
+                <p class="review-text">
+                    "This place never disappoints. The quality of the coffee and the service is top-notch."
+                </p>
+            </div>
+    
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Feel free to drop us a message or connect with us through our social media channels.</p>
+        
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" placeholder="Enter your message" rows="6" required></textarea>
+                </div>
+    
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+    
+            <!-- Social Media Links -->
+            <div class="social-media">
+                <h3>Connect with us</h3>
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="footer-container">
+            <!-- Company Info -->
+            <div class="footer-about">
+                <h3>About Us</h3>
+                <p>We are passionate about providing the best product and services. Stay connected and join our cafe for the latest updates and offerings.</p>
+            </div>
+            
+            <!-- Quick Links -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- Social Media Links -->
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Copyright Notice -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 The Ben Cafe. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "JMU2-b-shUTNP7T_t",
+      });
+   })();
+</script>
+
+</body>
+</html>
